@@ -1,0 +1,115 @@
+.order-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.order-list-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.order-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.order-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.order-header {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.order-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #495057;
+}
+
+.order-status {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.order-status.pending {
+    background-color: #ffeeba;
+    color: #856404;
+}
+
+.order-status.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.order-status.cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.order-details {
+    padding: 20px;
+}
+
+.order-date,
+.order-amount {
+    margin: 10px 0;
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+.order-date i,
+.order-amount i {
+    margin-right: 8px;
+}
+
+.view-details-button {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-details-button:hover {
+    background-color: #0056b3;
+}
+
+.view-details-button i {
+    margin-left: 5px;
+}
+
+.loading,
+.error-message,
+.no-orders {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-top: 50px;
+}
+
+.error-message {
+    color: #dc3545;
+}

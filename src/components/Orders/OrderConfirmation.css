@@ -1,0 +1,31 @@
+.order-confirmation {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-confirmation h2 {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.order-details {
+    margin-top: 20px;
+}
+
+.order-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-items li {
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+}
+
+.view-orders-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto 0;
+}
